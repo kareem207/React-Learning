@@ -1,0 +1,26 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: #F55A5A;
+    color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    top: 0px;
+}
+
+.Navbar_tags{
+    display: flex;
+}
+
+.Navbar_tags > *{
+    margin: 10px 3px;
+}
+
+.NavBar_title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+
+}

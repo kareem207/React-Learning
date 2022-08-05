@@ -1,0 +1,75 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+
+.TP_container{
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    margin: 22px;
+    margin-left: 28px;
+
+
+}
+
+.headline_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.noMargin{
+    margin:0px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.TP_leftSection{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+.TP_image{
+    width: 219px;
+    height: 294px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.TP_locationIcon{
+    margin-right: 5px;
+}
+.TP_country{
+    margin: 5px 10px 5px 0px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+.TP_locationOnTheMap{
+    color: #918E9B;
+    font-size: 14px;
+}
+
+.TP_place{
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0px;
+    margin-top: -7px;
+
+}
+.TP_date{
+    font-size: 19px;
+    font-weight: 700;
+    margin: 25px 0px 5px 0px;
+}
+.TP_description{
+    margin: 2px 5px 5px 0px;
+    font-weight: 300;
+
+}
