@@ -1,0 +1,99 @@
+.personal_card_container{
+    padding: 25px 150px;
+    background-color: #23252C;
+    margin: 20px;
+
+}
+
+.Pesronal_card{
+    width: 350px;
+    border-radius: 3%; 
+    overflow: hidden;
+    background-color:#1A1B21;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+
+}
+
+
+
+.Card_info{
+    height: 420px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+.Card_info > img {
+    width: 100%;
+    height: 318px;
+    object-fit: cover;
+    object-position: center;
+}
+.User_name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px;;
+    color:white;
+}
+.User_job_title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:#F3BF99;
+}
+
+.User_website{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-weight: 100;
+    font-size: 10px;
+    margin: 1px;
+    text-decoration: none;
+}
+
+
+.Contact_area{
+    display: flex;
+    justify-content: space-evenly ;
+    margin-top: 10px;
+}
+
+.Contact_area_button {
+    padding: 7px 30px;
+    background-color: white;
+    border-radius: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: transparent;
+}
+
+
+
+.About_section{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    margin-left: 10%;
+    color: white;
+}
+.About_section > p{
+    color: #DCDCDC;
+}
+
+
+.Footer_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 25px 10px;
+    background-color: #161619;
+    color: #918E9B;
+    padding: 20px;
+    margin:  0px 0px;
+}
+.Footer_section_a:visited,.Footer_section_a:hover,.Footer_section_a:active,.Footer_section_a:link {
+    color: #918E9B;
+}
