@@ -1,21 +1,21 @@
 import "./Main.css"
-import Diec from "./Diec/Diec";
+import Dice from "./Diec/Diec";
 import Confetti from 'react-confetti'
 import { useEffect, useState } from "react";
 
 function MainSection(props) {
 
-    const [diecIcons,setDiecIcons] = useState(createAllNewDices());
+    const [diceIcons,setDiceIcons] = useState(createAllNewDices());
     const [tenzies,setTenzies] = useState(false);
 
     useEffect(()=>{       
-        const firstDiec = diecIcons[0];
-        const checkAllFreezed = diecIcons.every((item)=> item.checkfreezed === true);
-        const checkAllHaveSamevalue = diecIcons.every((item)=>firstDiec.value === item.value)
+        const firstDice = diceIcons[0];
+        const checkAllFreezed = diceIcons.every((item)=> item.checkfreezed === true);
+        const checkAllHaveSamevalue = diceIcons.every((item)=>firstDice.value === item.value)
         if(checkAllFreezed && checkAllHaveSamevalue) setTenzies(true)
         else setTenzies(false)
 
-    },[diecIcons])
+    },[diceIcons])
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
@@ -35,7 +35,7 @@ function MainSection(props) {
     }
 
     function updateDiceState(id){
-        setDiecIcons((fullArr)=>{
+        setDiceIcons((fullArr)=>{
             return fullArr.map((arrElement)=>{
                 return  arrElement.id === id? {...arrElement, "checkfreezed" : !arrElement.checkfreezed } : arrElement
             })
@@ -43,7 +43,7 @@ function MainSection(props) {
     }
 
     function roll(){
-        setDiecIcons((fullArr)=>{
+        setDiceIcons((fullArr)=>{
             return fullArr.map((arrElement)=>{
                 return  arrElement.checkfreezed === false? {...arrElement, "value" : getRandomInt(6) } : arrElement
             })
@@ -51,11 +51,11 @@ function MainSection(props) {
     }
 
     function reset(){
-        setDiecIcons(createAllNewDices())
+        setDiceIcons(createAllNewDices())
     }
 
 
-    let DiecsVar = diecIcons.map(val=>(
+    let DiecsVar = diceIcons.map(val=>(
         <Diec 
         number = {val.value}
         checkfreezed = {val.checkfreezed}
@@ -79,7 +79,7 @@ function MainSection(props) {
                 <p>Wow, Congratulation you have just won the game click the button to restart</p>
                 }
 
-                <div className="DiecSection">
+                <div className="DiceSection">
                     {DiecsVar}                
                 </div>
                 {tenzies!=true?
