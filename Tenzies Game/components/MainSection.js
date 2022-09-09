@@ -55,8 +55,8 @@ function MainSection(props) {
     }
 
 
-    let DiecsVar = diceIcons.map(val=>(
-        <Diec 
+    let DicesVar = diceIcons.map(val=>(
+        <Dice 
         number = {val.value}
         checkfreezed = {val.checkfreezed}
         id={val.id}
@@ -80,7 +80,7 @@ function MainSection(props) {
                 }
 
                 <div className="DiceSection">
-                    {DiecsVar}                
+                    {DicesVar}                
                 </div>
                 {tenzies!=true?
                 <button className="RollButt" onClick={roll}>Roll</button>
