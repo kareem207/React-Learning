@@ -1,0 +1,44 @@
+body{
+    background-color: #0B2434;
+    color: #2B283A;
+}
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  
+}
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F5F5F5;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+
+.DiecSection{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-wrap: wrap;
+}
+
+.RollButt{
+    padding: 15px 60px 15px 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5035FF;
+    color: #FFFFFF;
+    margin: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
