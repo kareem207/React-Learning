@@ -1,13 +1,13 @@
 import React from 'react';
-import './Diec.css'
-function Diec(props) {
+import './Dice.css'
+function Dice(props) {
     const styles = {
         backgroundColor: props.checkfreezed ? "#59E391" : "white"
     }
 
     return (
         <div 
-        className='Diec' 
+        className='Dice' 
         style={styles} 
         onClick={props.changeState} 
         id={props.id}
@@ -19,4 +19,4 @@ function Diec(props) {
     );
 }
 
-export default Diec;
+export default Dice;
